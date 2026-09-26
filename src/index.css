@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  html {
+    color-scheme: dark;
+    background-color: #0f172a;
+  }
+
+  body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif !important;
+    letter-spacing: normal !important;
+    line-height: 1.5;
+  }
+
+  /* Clean Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+@layer utilities {
+  .clean-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 0.5rem;
+  }
+
+  .clean-card-hover {
+    transition: all 0.15s ease-in-out;
+  }
+
+  .clean-card-hover:hover {
+    border-color: #475569;
+    background-color: #243248;
+  }
+}
